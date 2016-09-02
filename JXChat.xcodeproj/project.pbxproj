@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B44259191D77FC30005BC3A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259181D77FC30005BC3A5 /* main.m */; };
+		B44259321D77FC30005BC3A5 /* JXChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259311D77FC30005BC3A5 /* JXChatTests.m */; };
+		B44259471D77FECF005BC3A5 /* JXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259461D77FECF005BC3A5 /* JXAppDelegate.m */; };
+		B44259521D780AF1005BC3A5 /* JXRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259511D780AF1005BC3A5 /* JXRootViewController.m */; };
+		B44259551D780ED4005BC3A5 /* JXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259541D780ED4005BC3A5 /* JXTabBarController.m */; };
+		B442595C1D780FEB005BC3A5 /* UIColor+JXChat.m in Sources */ = {isa = PBXBuildFile; fileRef = B442595B1D780FEB005BC3A5 /* UIColor+JXChat.m */; };
+		B44259651D781D3A005BC3A5 /* JXDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259641D781D3A005BC3A5 /* JXDiscoverViewController.m */; };
+		B44259681D781FE3005BC3A5 /* JXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259671D781FE3005BC3A5 /* JXNavigationController.m */; };
+		B442596B1D78210A005BC3A5 /* JXConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B442596A1D78210A005BC3A5 /* JXConversationViewController.m */; };
+		B442596E1D78211F005BC3A5 /* JXFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B442596D1D78211F005BC3A5 /* JXFriendsViewController.m */; };
+		B44259711D782154005BC3A5 /* JXMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259701D782154005BC3A5 /* JXMineViewController.m */; };
+		B44259741D782303005BC3A5 /* JXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259731D782303005BC3A5 /* JXTableViewController.m */; };
+		B44259B41D782625005BC3A5 /* FaceEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = B44259A21D782625005BC3A5 /* FaceEmoji.json */; };
+		B44259B51D782625005BC3A5 /* SystemEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = B44259A31D782625005BC3A5 /* SystemEmoji.json */; };
+		B44259B61D782625005BC3A5 /* Chat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44259A51D782625005BC3A5 /* Chat.xcassets */; };
+		B44259B71D782625005BC3A5 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44259A61D782625005BC3A5 /* Common.xcassets */; };
+		B44259B81D782625005BC3A5 /* Conversation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44259A71D782625005BC3A5 /* Conversation.xcassets */; };
+		B44259B91D782625005BC3A5 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44259A81D782625005BC3A5 /* Discover.xcassets */; };
+		B44259BA1D782625005BC3A5 /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44259A91D782625005BC3A5 /* Friends.xcassets */; };
+		B44259BB1D782625005BC3A5 /* Launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44259AA1D782625005BC3A5 /* Launch.xcassets */; };
+		B44259BC1D782625005BC3A5 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44259AB1D782625005BC3A5 /* Mine.xcassets */; };
+		B44259BD1D782625005BC3A5 /* FriendGroupList.json in Resources */ = {isa = PBXBuildFile; fileRef = B44259AE1D782625005BC3A5 /* FriendGroupList.json */; };
+		B44259BE1D782625005BC3A5 /* FriendList.json in Resources */ = {isa = PBXBuildFile; fileRef = B44259AF1D782625005BC3A5 /* FriendList.json */; };
+		B44259BF1D782625005BC3A5 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = B44259B11D782625005BC3A5 /* main.js */; };
+		B44259C01D782625005BC3A5 /* Moments.json in Resources */ = {isa = PBXBuildFile; fileRef = B44259B31D782625005BC3A5 /* Moments.json */; };
+		B498AFE81D792699005A9BD8 /* JXLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B498AFE71D792699005A9BD8 /* JXLog.m */; };
+		B498AFEB1D794425005A9BD8 /* JXFriendSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */; };
+		B498AFF61D794528005A9BD8 /* JXFirendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B498AFF51D794528005A9BD8 /* JXFirendHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B442592E1D77FC30005BC3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B442590C1D77FC30005BC3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44259131D77FC30005BC3A5;
+			remoteInfo = JXChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B44259141D77FC30005BC3A5 /* JXChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44259181D77FC30005BC3A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B44259281D77FC30005BC3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B442592D1D77FC30005BC3A5 /* JXChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44259311D77FC30005BC3A5 /* JXChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXChatTests.m; sourceTree = "<group>"; };
+		B44259331D77FC30005BC3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44259451D77FECF005BC3A5 /* JXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAppDelegate.h; sourceTree = "<group>"; };
+		B44259461D77FECF005BC3A5 /* JXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAppDelegate.m; sourceTree = "<group>"; };
+		B44259501D780AF1005BC3A5 /* JXRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXRootViewController.h; sourceTree = "<group>"; };
+		B44259511D780AF1005BC3A5 /* JXRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXRootViewController.m; sourceTree = "<group>"; };
+		B44259531D780ED4005BC3A5 /* JXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTabBarController.h; sourceTree = "<group>"; };
+		B44259541D780ED4005BC3A5 /* JXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTabBarController.m; sourceTree = "<group>"; };
+		B442595A1D780FEB005BC3A5 /* UIColor+JXChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JXChat.h"; sourceTree = "<group>"; };
+		B442595B1D780FEB005BC3A5 /* UIColor+JXChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JXChat.m"; sourceTree = "<group>"; };
+		B44259611D7812A7005BC3A5 /* JXMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXMacros.h; sourceTree = "<group>"; };
+		B44259621D78139A005BC3A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B44259631D781D3A005BC3A5 /* JXDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXDiscoverViewController.h; sourceTree = "<group>"; };
+		B44259641D781D3A005BC3A5 /* JXDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXDiscoverViewController.m; sourceTree = "<group>"; };
+		B44259661D781FE3005BC3A5 /* JXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXNavigationController.h; sourceTree = "<group>"; };
+		B44259671D781FE3005BC3A5 /* JXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXNavigationController.m; sourceTree = "<group>"; };
+		B44259691D78210A005BC3A5 /* JXConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXConversationViewController.h; sourceTree = "<group>"; };
+		B442596A1D78210A005BC3A5 /* JXConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXConversationViewController.m; sourceTree = "<group>"; };
+		B442596C1D78211F005BC3A5 /* JXFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFriendsViewController.h; sourceTree = "<group>"; };
+		B442596D1D78211F005BC3A5 /* JXFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendsViewController.m; sourceTree = "<group>"; };
+		B442596F1D782154005BC3A5 /* JXMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMineViewController.h; sourceTree = "<group>"; };
+		B44259701D782154005BC3A5 /* JXMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMineViewController.m; sourceTree = "<group>"; };
+		B44259721D782303005BC3A5 /* JXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTableViewController.h; sourceTree = "<group>"; };
+		B44259731D782303005BC3A5 /* JXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTableViewController.m; sourceTree = "<group>"; };
+		B44259A21D782625005BC3A5 /* FaceEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FaceEmoji.json; sourceTree = "<group>"; };
+		B44259A31D782625005BC3A5 /* SystemEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemEmoji.json; sourceTree = "<group>"; };
+		B44259A51D782625005BC3A5 /* Chat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chat.xcassets; sourceTree = "<group>"; };
+		B44259A61D782625005BC3A5 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		B44259A71D782625005BC3A5 /* Conversation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Conversation.xcassets; sourceTree = "<group>"; };
+		B44259A81D782625005BC3A5 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		B44259A91D782625005BC3A5 /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
+		B44259AA1D782625005BC3A5 /* Launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launch.xcassets; sourceTree = "<group>"; };
+		B44259AB1D782625005BC3A5 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
+		B44259AE1D782625005BC3A5 /* FriendGroupList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FriendGroupList.json; sourceTree = "<group>"; };
+		B44259AF1D782625005BC3A5 /* FriendList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FriendList.json; sourceTree = "<group>"; };
+		B44259B11D782625005BC3A5 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		B44259B31D782625005BC3A5 /* Moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moments.json; sourceTree = "<group>"; };
+		B498AFE61D792699005A9BD8 /* JXLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLog.h; sourceTree = "<group>"; };
+		B498AFE71D792699005A9BD8 /* JXLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXLog.m; sourceTree = "<group>"; };
+		B498AFE91D794425005A9BD8 /* JXFriendSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFriendSearchViewController.h; sourceTree = "<group>"; };
+		B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendSearchViewController.m; sourceTree = "<group>"; };
+		B498AFF41D794528005A9BD8 /* JXFirendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFirendHelper.h; sourceTree = "<group>"; };
+		B498AFF51D794528005A9BD8 /* JXFirendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFirendHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B44259111D77FC30005BC3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B442592A1D77FC30005BC3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B442590B1D77FC30005BC3A5 = {
+			isa = PBXGroup;
+			children = (
+				B44259161D77FC30005BC3A5 /* JXChat */,
+				B44259301D77FC30005BC3A5 /* JXChatTests */,
+				B44259151D77FC30005BC3A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B44259151D77FC30005BC3A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B44259141D77FC30005BC3A5 /* JXChat.app */,
+				B442592D1D77FC30005BC3A5 /* JXChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44259161D77FC30005BC3A5 /* JXChat */ = {
+			isa = PBXGroup;
+			children = (
+				B44259451D77FECF005BC3A5 /* JXAppDelegate.h */,
+				B44259461D77FECF005BC3A5 /* JXAppDelegate.m */,
+				B442593C1D77FD82005BC3A5 /* Business */,
+				B442593E1D77FD82005BC3A5 /* Config */,
+				B442593F1D77FD82005BC3A5 /* Extensions */,
+				B44259401D77FD82005BC3A5 /* Proxys */,
+				B442593D1D77FD82005BC3A5 /* Common */,
+				B44259421D77FD82005BC3A5 /* SRC */,
+				B44259431D77FD82005BC3A5 /* Store */,
+				B44259441D77FD82005BC3A5 /* Utilities */,
+				B44259411D77FD82005BC3A5 /* Resources */,
+				B44259171D77FC30005BC3A5 /* Supporting Files */,
+			);
+			path = JXChat;
+			sourceTree = "<group>";
+		};
+		B44259171D77FC30005BC3A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B44259621D78139A005BC3A5 /* PrefixHeader.pch */,
+				B44259281D77FC30005BC3A5 /* Info.plist */,
+				B44259181D77FC30005BC3A5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B44259301D77FC30005BC3A5 /* JXChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				B44259311D77FC30005BC3A5 /* JXChatTests.m */,
+				B44259331D77FC30005BC3A5 /* Info.plist */,
+			);
+			path = JXChatTests;
+			sourceTree = "<group>";
+		};
+		B442593C1D77FD82005BC3A5 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				B498AFEC1D7944FA005A9BD8 /* Chat */,
+				B498AFED1D7944FA005A9BD8 /* Common */,
+				B498AFEE1D7944FA005A9BD8 /* Discover */,
+				B498AFEF1D7944FA005A9BD8 /* Friends */,
+				B498AFF01D7944FA005A9BD8 /* Mine */,
+				B498AFF11D7944FA005A9BD8 /* Other */,
+				B498AFF21D7944FA005A9BD8 /* Setting */,
+				B498AFF31D7944FA005A9BD8 /* User */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		B442593D1D77FD82005BC3A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B44259661D781FE3005BC3A5 /* JXNavigationController.h */,
+				B44259671D781FE3005BC3A5 /* JXNavigationController.m */,
+				B44259531D780ED4005BC3A5 /* JXTabBarController.h */,
+				B44259541D780ED4005BC3A5 /* JXTabBarController.m */,
+				B44259721D782303005BC3A5 /* JXTableViewController.h */,
+				B44259731D782303005BC3A5 /* JXTableViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B442593E1D77FD82005BC3A5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B44259611D7812A7005BC3A5 /* JXMacros.h */,
+				B498AFE61D792699005A9BD8 /* JXLog.h */,
+				B498AFE71D792699005A9BD8 /* JXLog.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B442593F1D77FD82005BC3A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B44259401D77FD82005BC3A5 /* Proxys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Proxys;
+			sourceTree = "<group>";
+		};
+		B44259411D77FD82005BC3A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B44259A11D782625005BC3A5 /* DefaultEmoji */,
+				B44259A41D782625005BC3A5 /* Images */,
+				B44259AC1D782625005BC3A5 /* TestData */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B44259421D77FD82005BC3A5 /* SRC */ = {
+			isa = PBXGroup;
+			children = (
+				B44259491D780A65005BC3A5 /* Common */,
+				B44259481D780A65005BC3A5 /* Chat */,
+				B442594A1D780A65005BC3A5 /* Conversation */,
+				B442594C1D780A65005BC3A5 /* Friends */,
+				B442594B1D780A65005BC3A5 /* Discover */,
+				B442594D1D780A65005BC3A5 /* Mine */,
+				B442594E1D780A65005BC3A5 /* Root */,
+				B442594F1D780A65005BC3A5 /* Setting */,
+			);
+			path = SRC;
+			sourceTree = "<group>";
+		};
+		B44259431D77FD82005BC3A5 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		B44259441D77FD82005BC3A5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B44259591D780FC2005BC3A5 /* UIUtilities */,
+				B44259561D780FC2005BC3A5 /* DataUtilities */,
+				B44259571D780FC2005BC3A5 /* MediaUtilities */,
+				B44259581D780FC2005BC3A5 /* NetworkUtilities */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B44259481D780A65005BC3A5 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B44259491D780A65005BC3A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B44259501D780AF1005BC3A5 /* JXRootViewController.h */,
+				B44259511D780AF1005BC3A5 /* JXRootViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B442594A1D780A65005BC3A5 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				B44259691D78210A005BC3A5 /* JXConversationViewController.h */,
+				B442596A1D78210A005BC3A5 /* JXConversationViewController.m */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		B442594B1D780A65005BC3A5 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B44259631D781D3A005BC3A5 /* JXDiscoverViewController.h */,
+				B44259641D781D3A005BC3A5 /* JXDiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B442594C1D780A65005BC3A5 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				B442596C1D78211F005BC3A5 /* JXFriendsViewController.h */,
+				B442596D1D78211F005BC3A5 /* JXFriendsViewController.m */,
+				B498AFE91D794425005A9BD8 /* JXFriendSearchViewController.h */,
+				B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		B442594D1D780A65005BC3A5 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B442596F1D782154005BC3A5 /* JXMineViewController.h */,
+				B44259701D782154005BC3A5 /* JXMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B442594E1D780A65005BC3A5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B442594F1D780A65005BC3A5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B44259561D780FC2005BC3A5 /* DataUtilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataUtilities;
+			sourceTree = "<group>";
+		};
+		B44259571D780FC2005BC3A5 /* MediaUtilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MediaUtilities;
+			sourceTree = "<group>";
+		};
+		B44259581D780FC2005BC3A5 /* NetworkUtilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkUtilities;
+			sourceTree = "<group>";
+		};
+		B44259591D780FC2005BC3A5 /* UIUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B442595A1D780FEB005BC3A5 /* UIColor+JXChat.h */,
+				B442595B1D780FEB005BC3A5 /* UIColor+JXChat.m */,
+			);
+			path = UIUtilities;
+			sourceTree = "<group>";
+		};
+		B44259A11D782625005BC3A5 /* DefaultEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				B44259A21D782625005BC3A5 /* FaceEmoji.json */,
+				B44259A31D782625005BC3A5 /* SystemEmoji.json */,
+			);
+			path = DefaultEmoji;
+			sourceTree = "<group>";
+		};
+		B44259A41D782625005BC3A5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B44259AA1D782625005BC3A5 /* Launch.xcassets */,
+				B44259A51D782625005BC3A5 /* Chat.xcassets */,
+				B44259A61D782625005BC3A5 /* Common.xcassets */,
+				B44259A71D782625005BC3A5 /* Conversation.xcassets */,
+				B44259A81D782625005BC3A5 /* Discover.xcassets */,
+				B44259A91D782625005BC3A5 /* Friends.xcassets */,
+				B44259AB1D782625005BC3A5 /* Mine.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B44259AC1D782625005BC3A5 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				B44259AD1D782625005BC3A5 /* Friends */,
+				B44259B01D782625005BC3A5 /* JSPatch */,
+				B44259B21D782625005BC3A5 /* Moments */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		B44259AD1D782625005BC3A5 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				B44259AE1D782625005BC3A5 /* FriendGroupList.json */,
+				B44259AF1D782625005BC3A5 /* FriendList.json */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		B44259B01D782625005BC3A5 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				B44259B11D782625005BC3A5 /* main.js */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
+		B44259B21D782625005BC3A5 /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				B44259B31D782625005BC3A5 /* Moments.json */,
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		B498AFEC1D7944FA005A9BD8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B498AFED1D7944FA005A9BD8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B498AFEE1D7944FA005A9BD8 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B498AFEF1D7944FA005A9BD8 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				B498AFF41D794528005A9BD8 /* JXFirendHelper.h */,
+				B498AFF51D794528005A9BD8 /* JXFirendHelper.m */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		B498AFF01D7944FA005A9BD8 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B498AFF11D7944FA005A9BD8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B498AFF21D7944FA005A9BD8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B498AFF31D7944FA005A9BD8 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44259131D77FC30005BC3A5 /* JXChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44259361D77FC30005BC3A5 /* Build configuration list for PBXNativeTarget "JXChat" */;
+			buildPhases = (
+				B44259101D77FC30005BC3A5 /* Sources */,
+				B44259111D77FC30005BC3A5 /* Frameworks */,
+				B44259121D77FC30005BC3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXChat;
+			productName = JXChat;
+			productReference = B44259141D77FC30005BC3A5 /* JXChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B442592C1D77FC30005BC3A5 /* JXChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44259391D77FC30005BC3A5 /* Build configuration list for PBXNativeTarget "JXChatTests" */;
+			buildPhases = (
+				B44259291D77FC30005BC3A5 /* Sources */,
+				B442592A1D77FC30005BC3A5 /* Frameworks */,
+				B442592B1D77FC30005BC3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B442592F1D77FC30005BC3A5 /* PBXTargetDependency */,
+			);
+			name = JXChatTests;
+			productName = JXChatTests;
+			productReference = B442592D1D77FC30005BC3A5 /* JXChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B442590C1D77FC30005BC3A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = NO1;
+				TargetAttributes = {
+					B44259131D77FC30005BC3A5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B442592C1D77FC30005BC3A5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B44259131D77FC30005BC3A5;
+					};
+				};
+			};
+			buildConfigurationList = B442590F1D77FC30005BC3A5 /* Build configuration list for PBXProject "JXChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B442590B1D77FC30005BC3A5;
+			productRefGroup = B44259151D77FC30005BC3A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B44259131D77FC30005BC3A5 /* JXChat */,
+				B442592C1D77FC30005BC3A5 /* JXChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B44259121D77FC30005BC3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44259BE1D782625005BC3A5 /* FriendList.json in Resources */,
+				B44259B71D782625005BC3A5 /* Common.xcassets in Resources */,
+				B44259BA1D782625005BC3A5 /* Friends.xcassets in Resources */,
+				B44259BF1D782625005BC3A5 /* main.js in Resources */,
+				B44259B81D782625005BC3A5 /* Conversation.xcassets in Resources */,
+				B44259C01D782625005BC3A5 /* Moments.json in Resources */,
+				B44259BD1D782625005BC3A5 /* FriendGroupList.json in Resources */,
+				B44259B91D782625005BC3A5 /* Discover.xcassets in Resources */,
+				B44259B41D782625005BC3A5 /* FaceEmoji.json in Resources */,
+				B44259BC1D782625005BC3A5 /* Mine.xcassets in Resources */,
+				B44259B61D782625005BC3A5 /* Chat.xcassets in Resources */,
+				B44259BB1D782625005BC3A5 /* Launch.xcassets in Resources */,
+				B44259B51D782625005BC3A5 /* SystemEmoji.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B442592B1D77FC30005BC3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B44259101D77FC30005BC3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B442595C1D780FEB005BC3A5 /* UIColor+JXChat.m in Sources */,
+				B44259711D782154005BC3A5 /* JXMineViewController.m in Sources */,
+				B44259471D77FECF005BC3A5 /* JXAppDelegate.m in Sources */,
+				B498AFF61D794528005A9BD8 /* JXFirendHelper.m in Sources */,
+				B44259741D782303005BC3A5 /* JXTableViewController.m in Sources */,
+				B498AFEB1D794425005A9BD8 /* JXFriendSearchViewController.m in Sources */,
+				B442596E1D78211F005BC3A5 /* JXFriendsViewController.m in Sources */,
+				B44259551D780ED4005BC3A5 /* JXTabBarController.m in Sources */,
+				B498AFE81D792699005A9BD8 /* JXLog.m in Sources */,
+				B44259651D781D3A005BC3A5 /* JXDiscoverViewController.m in Sources */,
+				B44259521D780AF1005BC3A5 /* JXRootViewController.m in Sources */,
+				B442596B1D78210A005BC3A5 /* JXConversationViewController.m in Sources */,
+				B44259191D77FC30005BC3A5 /* main.m in Sources */,
+				B44259681D781FE3005BC3A5 /* JXNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44259291D77FC30005BC3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44259321D77FC30005BC3A5 /* JXChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B442592F1D77FC30005BC3A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44259131D77FC30005BC3A5 /* JXChat */;
+			targetProxy = B442592E1D77FC30005BC3A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B44259341D77FC30005BC3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B44259351D77FC30005BC3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B44259371D77FC30005BC3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JXChat/PrefixHeader.pch";
+				INFOPLIST_FILE = JXChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxchat.JXChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B44259381D77FC30005BC3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JXChat/PrefixHeader.pch";
+				INFOPLIST_FILE = JXChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxchat.JXChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B442593A1D77FC30005BC3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JXChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxchat.JXChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXChat.app/JXChat";
+			};
+			name = Debug;
+		};
+		B442593B1D77FC30005BC3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JXChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxchat.JXChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXChat.app/JXChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B442590F1D77FC30005BC3A5 /* Build configuration list for PBXProject "JXChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44259341D77FC30005BC3A5 /* Debug */,
+				B44259351D77FC30005BC3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44259361D77FC30005BC3A5 /* Build configuration list for PBXNativeTarget "JXChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44259371D77FC30005BC3A5 /* Debug */,
+				B44259381D77FC30005BC3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44259391D77FC30005BC3A5 /* Build configuration list for PBXNativeTarget "JXChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B442593A1D77FC30005BC3A5 /* Debug */,
+				B442593B1D77FC30005BC3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B442590C1D77FC30005BC3A5 /* Project object */;
+}
