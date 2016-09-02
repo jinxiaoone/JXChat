@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A57A4381C00DA11CF66E153 /* libPods-JXChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC93C382BBE48118C787769E /* libPods-JXChat.a */; };
 		B44259191D77FC30005BC3A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259181D77FC30005BC3A5 /* main.m */; };
 		B44259321D77FC30005BC3A5 /* JXChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259311D77FC30005BC3A5 /* JXChatTests.m */; };
 		B44259471D77FECF005BC3A5 /* JXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B44259461D77FECF005BC3A5 /* JXAppDelegate.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FBC5A5EC63599FAF524329A /* Pods-JXChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXChat/Pods-JXChat.release.xcconfig"; sourceTree = "<group>"; };
+		6E91E111A10D3BF7D2EAE319 /* Pods-JXChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXChat/Pods-JXChat.debug.xcconfig"; sourceTree = "<group>"; };
 		B44259141D77FC30005BC3A5 /* JXChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44259181D77FC30005BC3A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B44259281D77FC30005BC3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendSearchViewController.m; sourceTree = "<group>"; };
 		B498AFF41D794528005A9BD8 /* JXFirendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFirendHelper.h; sourceTree = "<group>"; };
 		B498AFF51D794528005A9BD8 /* JXFirendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFirendHelper.m; sourceTree = "<group>"; };
+		CC93C382BBE48118C787769E /* libPods-JXChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A57A4381C00DA11CF66E153 /* libPods-JXChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,12 +120,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BD5AA139CF79C14FA347FD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC93C382BBE48118C787769E /* libPods-JXChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B442590B1D77FC30005BC3A5 = {
 			isa = PBXGroup;
 			children = (
 				B44259161D77FC30005BC3A5 /* JXChat */,
 				B44259301D77FC30005BC3A5 /* JXChatTests */,
 				B44259151D77FC30005BC3A5 /* Products */,
+				D9DF5AB55FB5C738FB43B3F9 /* Pods */,
+				1BD5AA139CF79C14FA347FD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -480,6 +495,15 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		D9DF5AB55FB5C738FB43B3F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E91E111A10D3BF7D2EAE319 /* Pods-JXChat.debug.xcconfig */,
+				4FBC5A5EC63599FAF524329A /* Pods-JXChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -487,9 +511,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B44259361D77FC30005BC3A5 /* Build configuration list for PBXNativeTarget "JXChat" */;
 			buildPhases = (
+				E8BB2C23274DCE7F7092A6A8 /* [CP] Check Pods Manifest.lock */,
 				B44259101D77FC30005BC3A5 /* Sources */,
 				B44259111D77FC30005BC3A5 /* Frameworks */,
 				B44259121D77FC30005BC3A5 /* Resources */,
+				6EC2F936B728E49B2A7779D9 /* [CP] Embed Pods Frameworks */,
+				E498A0745AAC6A1B4ECE07C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -584,6 +611,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EC2F936B728E49B2A7779D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JXChat/Pods-JXChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E498A0745AAC6A1B4ECE07C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JXChat/Pods-JXChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8BB2C23274DCE7F7092A6A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B44259101D77FC30005BC3A5 /* Sources */ = {
@@ -712,6 +787,7 @@
 		};
 		B44259371D77FC30005BC3A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E91E111A10D3BF7D2EAE319 /* Pods-JXChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JXChat/PrefixHeader.pch";
@@ -725,6 +801,7 @@
 		};
 		B44259381D77FC30005BC3A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FBC5A5EC63599FAF524329A /* Pods-JXChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JXChat/PrefixHeader.pch";
