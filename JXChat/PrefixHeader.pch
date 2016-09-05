@@ -17,8 +17,13 @@
 #import "JXMacros.h"
 #import "UIColor+JXChat.h"
 
+#import "JXFriendHelper.h"
 
 #import "JXNavigationController.h"
+
+
+
+#import "UIView+Frame.h"
 
 
 #endif /* PrefixHeader_pch */

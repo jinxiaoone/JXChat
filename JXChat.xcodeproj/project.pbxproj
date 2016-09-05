@@ -35,7 +35,20 @@
 		B44259C01D782625005BC3A5 /* Moments.json in Resources */ = {isa = PBXBuildFile; fileRef = B44259B31D782625005BC3A5 /* Moments.json */; };
 		B498AFE81D792699005A9BD8 /* JXLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B498AFE71D792699005A9BD8 /* JXLog.m */; };
 		B498AFEB1D794425005A9BD8 /* JXFriendSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */; };
-		B498AFF61D794528005A9BD8 /* JXFirendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B498AFF51D794528005A9BD8 /* JXFirendHelper.m */; };
+		B498AFF61D794528005A9BD8 /* JXFriendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B498AFF51D794528005A9BD8 /* JXFriendHelper.m */; };
+		B4B2B7871D7D1852005B8959 /* JXSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B7861D7D1852005B8959 /* JXSearchController.m */; };
+		B4B2B78A1D7D41F9005B8959 /* JXFriendsViewController+Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B7891D7D41F9005B8959 /* JXFriendsViewController+Delegate.m */; };
+		B4B2B78D1D7D4715005B8959 /* JXFriendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B78C1D7D4715005B8959 /* JXFriendHeaderView.m */; };
+		B4B2B7901D7D4B26005B8959 /* JXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B78F1D7D4B26005B8959 /* JXTableViewCell.m */; };
+		B4B2B7931D7D4B6D005B8959 /* JXFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B7921D7D4B6D005B8959 /* JXFriendCell.m */; };
+		B4B2B7961D7D5208005B8959 /* JXUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B7951D7D5208005B8959 /* JXUserGroup.m */; };
+		B4B2B79B1D7D5D69005B8959 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B79A1D7D5D69005B8959 /* UIView+Frame.m */; };
+		B4B2B79E1D7D65B0005B8959 /* JXUserDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B79D1D7D65B0005B8959 /* JXUserDetail.m */; };
+		B4B2B7A11D7D65DB005B8959 /* JXUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B7A01D7D65DB005B8959 /* JXUserSetting.m */; };
+		B4B2B7A41D7D65F7005B8959 /* JXUserChatSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2B7A31D7D65F7005B8959 /* JXUserChatSetting.m */; };
+		B4C68D691D7971A1000091AD /* JXBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C68D681D7971A1000091AD /* JXBaseDataModel.m */; };
+		B4C68D6C1D7971F2000091AD /* JXUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C68D6B1D7971F2000091AD /* JXUser.m */; };
+		B4C68D6F1D7972E7000091AD /* JXGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C68D6E1D7972E7000091AD /* JXGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,24 +74,24 @@
 		B44259461D77FECF005BC3A5 /* JXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAppDelegate.m; sourceTree = "<group>"; };
 		B44259501D780AF1005BC3A5 /* JXRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXRootViewController.h; sourceTree = "<group>"; };
 		B44259511D780AF1005BC3A5 /* JXRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXRootViewController.m; sourceTree = "<group>"; };
-		B44259531D780ED4005BC3A5 /* JXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTabBarController.h; sourceTree = "<group>"; };
-		B44259541D780ED4005BC3A5 /* JXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTabBarController.m; sourceTree = "<group>"; };
+		B44259531D780ED4005BC3A5 /* JXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXTabBarController.h; path = JXChat/Common/JXTabBarController.h; sourceTree = SOURCE_ROOT; };
+		B44259541D780ED4005BC3A5 /* JXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JXTabBarController.m; path = JXChat/Common/JXTabBarController.m; sourceTree = SOURCE_ROOT; };
 		B442595A1D780FEB005BC3A5 /* UIColor+JXChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JXChat.h"; sourceTree = "<group>"; };
 		B442595B1D780FEB005BC3A5 /* UIColor+JXChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JXChat.m"; sourceTree = "<group>"; };
 		B44259611D7812A7005BC3A5 /* JXMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXMacros.h; sourceTree = "<group>"; };
 		B44259621D78139A005BC3A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B44259631D781D3A005BC3A5 /* JXDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXDiscoverViewController.h; sourceTree = "<group>"; };
 		B44259641D781D3A005BC3A5 /* JXDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXDiscoverViewController.m; sourceTree = "<group>"; };
-		B44259661D781FE3005BC3A5 /* JXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXNavigationController.h; sourceTree = "<group>"; };
-		B44259671D781FE3005BC3A5 /* JXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXNavigationController.m; sourceTree = "<group>"; };
+		B44259661D781FE3005BC3A5 /* JXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXNavigationController.h; path = JXChat/Common/JXNavigationController.h; sourceTree = SOURCE_ROOT; };
+		B44259671D781FE3005BC3A5 /* JXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JXNavigationController.m; path = JXChat/Common/JXNavigationController.m; sourceTree = SOURCE_ROOT; };
 		B44259691D78210A005BC3A5 /* JXConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXConversationViewController.h; sourceTree = "<group>"; };
 		B442596A1D78210A005BC3A5 /* JXConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXConversationViewController.m; sourceTree = "<group>"; };
-		B442596C1D78211F005BC3A5 /* JXFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFriendsViewController.h; sourceTree = "<group>"; };
-		B442596D1D78211F005BC3A5 /* JXFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendsViewController.m; sourceTree = "<group>"; };
+		B442596C1D78211F005BC3A5 /* JXFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXFriendsViewController.h; path = ../JXFriendsViewController.h; sourceTree = "<group>"; };
+		B442596D1D78211F005BC3A5 /* JXFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JXFriendsViewController.m; path = ../JXFriendsViewController.m; sourceTree = "<group>"; };
 		B442596F1D782154005BC3A5 /* JXMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMineViewController.h; sourceTree = "<group>"; };
 		B44259701D782154005BC3A5 /* JXMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMineViewController.m; sourceTree = "<group>"; };
-		B44259721D782303005BC3A5 /* JXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTableViewController.h; sourceTree = "<group>"; };
-		B44259731D782303005BC3A5 /* JXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTableViewController.m; sourceTree = "<group>"; };
+		B44259721D782303005BC3A5 /* JXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXTableViewController.h; path = JXChat/Common/JXTableViewController.h; sourceTree = SOURCE_ROOT; };
+		B44259731D782303005BC3A5 /* JXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JXTableViewController.m; path = JXChat/Common/JXTableViewController.m; sourceTree = SOURCE_ROOT; };
 		B44259A21D782625005BC3A5 /* FaceEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FaceEmoji.json; sourceTree = "<group>"; };
 		B44259A31D782625005BC3A5 /* SystemEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemEmoji.json; sourceTree = "<group>"; };
 		B44259A51D782625005BC3A5 /* Chat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chat.xcassets; sourceTree = "<group>"; };
@@ -94,10 +107,36 @@
 		B44259B31D782625005BC3A5 /* Moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moments.json; sourceTree = "<group>"; };
 		B498AFE61D792699005A9BD8 /* JXLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLog.h; sourceTree = "<group>"; };
 		B498AFE71D792699005A9BD8 /* JXLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXLog.m; sourceTree = "<group>"; };
-		B498AFE91D794425005A9BD8 /* JXFriendSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFriendSearchViewController.h; sourceTree = "<group>"; };
-		B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendSearchViewController.m; sourceTree = "<group>"; };
-		B498AFF41D794528005A9BD8 /* JXFirendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFirendHelper.h; sourceTree = "<group>"; };
-		B498AFF51D794528005A9BD8 /* JXFirendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFirendHelper.m; sourceTree = "<group>"; };
+		B498AFE91D794425005A9BD8 /* JXFriendSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXFriendSearchViewController.h; path = ../JXFriendSearchViewController.h; sourceTree = "<group>"; };
+		B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JXFriendSearchViewController.m; path = ../JXFriendSearchViewController.m; sourceTree = "<group>"; };
+		B498AFF41D794528005A9BD8 /* JXFriendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFriendHelper.h; sourceTree = "<group>"; };
+		B498AFF51D794528005A9BD8 /* JXFriendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendHelper.m; sourceTree = "<group>"; };
+		B4B2B7851D7D1852005B8959 /* JXSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXSearchController.h; sourceTree = "<group>"; };
+		B4B2B7861D7D1852005B8959 /* JXSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXSearchController.m; sourceTree = "<group>"; };
+		B4B2B7881D7D41F9005B8959 /* JXFriendsViewController+Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JXFriendsViewController+Delegate.h"; sourceTree = "<group>"; };
+		B4B2B7891D7D41F9005B8959 /* JXFriendsViewController+Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JXFriendsViewController+Delegate.m"; sourceTree = "<group>"; };
+		B4B2B78B1D7D4715005B8959 /* JXFriendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFriendHeaderView.h; sourceTree = "<group>"; };
+		B4B2B78C1D7D4715005B8959 /* JXFriendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendHeaderView.m; sourceTree = "<group>"; };
+		B4B2B78E1D7D4B26005B8959 /* JXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTableViewCell.h; sourceTree = "<group>"; };
+		B4B2B78F1D7D4B26005B8959 /* JXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTableViewCell.m; sourceTree = "<group>"; };
+		B4B2B7911D7D4B6D005B8959 /* JXFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXFriendCell.h; sourceTree = "<group>"; };
+		B4B2B7921D7D4B6D005B8959 /* JXFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXFriendCell.m; sourceTree = "<group>"; };
+		B4B2B7941D7D5208005B8959 /* JXUserGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXUserGroup.h; sourceTree = "<group>"; };
+		B4B2B7951D7D5208005B8959 /* JXUserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXUserGroup.m; sourceTree = "<group>"; };
+		B4B2B7991D7D5D69005B8959 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		B4B2B79A1D7D5D69005B8959 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		B4B2B79C1D7D65B0005B8959 /* JXUserDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXUserDetail.h; sourceTree = "<group>"; };
+		B4B2B79D1D7D65B0005B8959 /* JXUserDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXUserDetail.m; sourceTree = "<group>"; };
+		B4B2B79F1D7D65DB005B8959 /* JXUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXUserSetting.h; sourceTree = "<group>"; };
+		B4B2B7A01D7D65DB005B8959 /* JXUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXUserSetting.m; sourceTree = "<group>"; };
+		B4B2B7A21D7D65F7005B8959 /* JXUserChatSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXUserChatSetting.h; sourceTree = "<group>"; };
+		B4B2B7A31D7D65F7005B8959 /* JXUserChatSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXUserChatSetting.m; sourceTree = "<group>"; };
+		B4C68D671D7971A1000091AD /* JXBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXBaseDataModel.h; sourceTree = "<group>"; };
+		B4C68D681D7971A1000091AD /* JXBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXBaseDataModel.m; sourceTree = "<group>"; };
+		B4C68D6A1D7971F2000091AD /* JXUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXUser.h; sourceTree = "<group>"; };
+		B4C68D6B1D7971F2000091AD /* JXUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXUser.m; sourceTree = "<group>"; };
+		B4C68D6D1D7972E7000091AD /* JXGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXGroup.h; sourceTree = "<group>"; };
+		B4C68D6E1D7972E7000091AD /* JXGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXGroup.m; sourceTree = "<group>"; };
 		CC93C382BBE48118C787769E /* libPods-JXChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,14 +192,14 @@
 			children = (
 				B44259451D77FECF005BC3A5 /* JXAppDelegate.h */,
 				B44259461D77FECF005BC3A5 /* JXAppDelegate.m */,
-				B442593C1D77FD82005BC3A5 /* Business */,
 				B442593E1D77FD82005BC3A5 /* Config */,
-				B442593F1D77FD82005BC3A5 /* Extensions */,
 				B44259401D77FD82005BC3A5 /* Proxys */,
+				B442593C1D77FD82005BC3A5 /* Business */,
 				B442593D1D77FD82005BC3A5 /* Common */,
 				B44259421D77FD82005BC3A5 /* SRC */,
 				B44259431D77FD82005BC3A5 /* Store */,
 				B44259441D77FD82005BC3A5 /* Utilities */,
+				B442593F1D77FD82005BC3A5 /* Extensions */,
 				B44259411D77FD82005BC3A5 /* Resources */,
 				B44259171D77FC30005BC3A5 /* Supporting Files */,
 			);
@@ -204,12 +243,17 @@
 		B442593D1D77FD82005BC3A5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B44259661D781FE3005BC3A5 /* JXNavigationController.h */,
-				B44259671D781FE3005BC3A5 /* JXNavigationController.m */,
-				B44259531D780ED4005BC3A5 /* JXTabBarController.h */,
-				B44259541D780ED4005BC3A5 /* JXTabBarController.m */,
-				B44259721D782303005BC3A5 /* JXTableViewController.h */,
-				B44259731D782303005BC3A5 /* JXTableViewController.m */,
+				B4B2B77E1D7D17A1005B8959 /* JXSearchController */,
+				B4B2B77D1D7D17A1005B8959 /* JXNavigationController */,
+				B4B2B7801D7D17A1005B8959 /* JXTabBarController */,
+				B4B2B7821D7D17A1005B8959 /* JXTableViewController */,
+				B4B2B7831D7D17A1005B8959 /* JXViewController */,
+				B4B2B7811D7D17A1005B8959 /* JXTableViewCell */,
+				B4B2B77C1D7D17A1005B8959 /* JXMenuViewController */,
+				B4B2B77F1D7D17A1005B8959 /* JXSettingViewController */,
+				B4B2B77B1D7D17A1005B8959 /* JXInfoViewController */,
+				B4B2B7841D7D17A1005B8959 /* JXWebViewController */,
+				B4B2B77A1D7D17A1005B8959 /* JXActionSheet */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -227,6 +271,8 @@
 		B442593F1D77FD82005BC3A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B4B2B7971D7D5D57005B8959 /* Categories */,
+				B4B2B7981D7D5D57005B8959 /* Vendors */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +280,12 @@
 		B44259401D77FD82005BC3A5 /* Proxys */ = {
 			isa = PBXGroup;
 			children = (
+				B4C68D5F1D7970EB000091AD /* Base */,
+				B4C68D601D7970EB000091AD /* Chat */,
+				B4C68D611D7970EB000091AD /* Friends */,
+				B4C68D621D7970EB000091AD /* Mine */,
+				B4C68D631D7970EB000091AD /* Moments */,
+				B4C68D641D7970EB000091AD /* Root */,
 			);
 			path = Proxys;
 			sourceTree = "<group>";
@@ -318,10 +370,14 @@
 		B442594C1D780A65005BC3A5 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				B442596C1D78211F005BC3A5 /* JXFriendsViewController.h */,
-				B442596D1D78211F005BC3A5 /* JXFriendsViewController.m */,
-				B498AFE91D794425005A9BD8 /* JXFriendSearchViewController.h */,
-				B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */,
+				B4B2B7741D7D1546005B8959 /* FriendsViewController */,
+				B4B2B7731D7D1546005B8959 /* FriendsSearchViewController */,
+				B4B2B7721D7D1546005B8959 /* FriendDetailViewController */,
+				B4B2B7711D7D1546005B8959 /* AddFriendViewController */,
+				B4B2B7751D7D1546005B8959 /* GroupViewController */,
+				B4B2B7761D7D1546005B8959 /* NewFriendViewController */,
+				B4B2B7771D7D1546005B8959 /* PublicServerViewController */,
+				B4B2B7781D7D1546005B8959 /* TagsViewController */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -461,8 +517,8 @@
 		B498AFEF1D7944FA005A9BD8 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				B498AFF41D794528005A9BD8 /* JXFirendHelper.h */,
-				B498AFF51D794528005A9BD8 /* JXFirendHelper.m */,
+				B498AFF41D794528005A9BD8 /* JXFriendHelper.h */,
+				B498AFF51D794528005A9BD8 /* JXFriendHelper.m */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -493,6 +549,255 @@
 			children = (
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		B4B2B7711D7D1546005B8959 /* AddFriendViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddFriendViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7721D7D1546005B8959 /* FriendDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendDetailViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7731D7D1546005B8959 /* FriendsSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B498AFE91D794425005A9BD8 /* JXFriendSearchViewController.h */,
+				B498AFEA1D794425005A9BD8 /* JXFriendSearchViewController.m */,
+			);
+			path = FriendsSearchViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7741D7D1546005B8959 /* FriendsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4B2B7791D7D15BA005B8959 /* FriendsViews */,
+				B442596C1D78211F005BC3A5 /* JXFriendsViewController.h */,
+				B442596D1D78211F005BC3A5 /* JXFriendsViewController.m */,
+				B4B2B7881D7D41F9005B8959 /* JXFriendsViewController+Delegate.h */,
+				B4B2B7891D7D41F9005B8959 /* JXFriendsViewController+Delegate.m */,
+			);
+			path = FriendsViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7751D7D1546005B8959 /* GroupViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroupViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7761D7D1546005B8959 /* NewFriendViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewFriendViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7771D7D1546005B8959 /* PublicServerViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PublicServerViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7781D7D1546005B8959 /* TagsViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TagsViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7791D7D15BA005B8959 /* FriendsViews */ = {
+			isa = PBXGroup;
+			children = (
+				B4B2B78B1D7D4715005B8959 /* JXFriendHeaderView.h */,
+				B4B2B78C1D7D4715005B8959 /* JXFriendHeaderView.m */,
+				B4B2B7911D7D4B6D005B8959 /* JXFriendCell.h */,
+				B4B2B7921D7D4B6D005B8959 /* JXFriendCell.m */,
+			);
+			path = FriendsViews;
+			sourceTree = "<group>";
+		};
+		B4B2B77A1D7D17A1005B8959 /* JXActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JXActionSheet;
+			sourceTree = "<group>";
+		};
+		B4B2B77B1D7D17A1005B8959 /* JXInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JXInfoViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B77C1D7D17A1005B8959 /* JXMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JXMenuViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B77D1D7D17A1005B8959 /* JXNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				B44259661D781FE3005BC3A5 /* JXNavigationController.h */,
+				B44259671D781FE3005BC3A5 /* JXNavigationController.m */,
+			);
+			path = JXNavigationController;
+			sourceTree = "<group>";
+		};
+		B4B2B77E1D7D17A1005B8959 /* JXSearchController */ = {
+			isa = PBXGroup;
+			children = (
+				B4B2B7851D7D1852005B8959 /* JXSearchController.h */,
+				B4B2B7861D7D1852005B8959 /* JXSearchController.m */,
+			);
+			path = JXSearchController;
+			sourceTree = "<group>";
+		};
+		B4B2B77F1D7D17A1005B8959 /* JXSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JXSettingViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7801D7D17A1005B8959 /* JXTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				B44259531D780ED4005BC3A5 /* JXTabBarController.h */,
+				B44259541D780ED4005BC3A5 /* JXTabBarController.m */,
+			);
+			path = JXTabBarController;
+			sourceTree = "<group>";
+		};
+		B4B2B7811D7D17A1005B8959 /* JXTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B4B2B78E1D7D4B26005B8959 /* JXTableViewCell.h */,
+				B4B2B78F1D7D4B26005B8959 /* JXTableViewCell.m */,
+			);
+			path = JXTableViewCell;
+			sourceTree = "<group>";
+		};
+		B4B2B7821D7D17A1005B8959 /* JXTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B44259721D782303005BC3A5 /* JXTableViewController.h */,
+				B44259731D782303005BC3A5 /* JXTableViewController.m */,
+			);
+			path = JXTableViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7831D7D17A1005B8959 /* JXViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JXViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7841D7D17A1005B8959 /* JXWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JXWebViewController;
+			sourceTree = "<group>";
+		};
+		B4B2B7971D7D5D57005B8959 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B4B2B7991D7D5D69005B8959 /* UIView+Frame.h */,
+				B4B2B79A1D7D5D69005B8959 /* UIView+Frame.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B4B2B7981D7D5D57005B8959 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		B4C68D5F1D7970EB000091AD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B4C68D671D7971A1000091AD /* JXBaseDataModel.h */,
+				B4C68D681D7971A1000091AD /* JXBaseDataModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B4C68D601D7970EB000091AD /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B4C68D611D7970EB000091AD /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				B4C68D661D797125000091AD /* Users */,
+				B4C68D651D797125000091AD /* Groups */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		B4C68D621D7970EB000091AD /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B4C68D631D7970EB000091AD /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		B4C68D641D7970EB000091AD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B4C68D651D797125000091AD /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				B4C68D6D1D7972E7000091AD /* JXGroup.h */,
+				B4C68D6E1D7972E7000091AD /* JXGroup.m */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		B4C68D661D797125000091AD /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				B4C68D6A1D7971F2000091AD /* JXUser.h */,
+				B4C68D6B1D7971F2000091AD /* JXUser.m */,
+				B4B2B79C1D7D65B0005B8959 /* JXUserDetail.h */,
+				B4B2B79D1D7D65B0005B8959 /* JXUserDetail.m */,
+				B4B2B79F1D7D65DB005B8959 /* JXUserSetting.h */,
+				B4B2B7A01D7D65DB005B8959 /* JXUserSetting.m */,
+				B4B2B7A21D7D65F7005B8959 /* JXUserChatSetting.h */,
+				B4B2B7A31D7D65F7005B8959 /* JXUserChatSetting.m */,
+				B4B2B7941D7D5208005B8959 /* JXUserGroup.h */,
+				B4B2B7951D7D5208005B8959 /* JXUserGroup.m */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		D9DF5AB55FB5C738FB43B3F9 /* Pods */ = {
@@ -665,19 +970,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B2B79B1D7D5D69005B8959 /* UIView+Frame.m in Sources */,
 				B442595C1D780FEB005BC3A5 /* UIColor+JXChat.m in Sources */,
+				B4B2B7871D7D1852005B8959 /* JXSearchController.m in Sources */,
 				B44259711D782154005BC3A5 /* JXMineViewController.m in Sources */,
 				B44259471D77FECF005BC3A5 /* JXAppDelegate.m in Sources */,
-				B498AFF61D794528005A9BD8 /* JXFirendHelper.m in Sources */,
+				B498AFF61D794528005A9BD8 /* JXFriendHelper.m in Sources */,
+				B4C68D6C1D7971F2000091AD /* JXUser.m in Sources */,
+				B4B2B7A41D7D65F7005B8959 /* JXUserChatSetting.m in Sources */,
 				B44259741D782303005BC3A5 /* JXTableViewController.m in Sources */,
 				B498AFEB1D794425005A9BD8 /* JXFriendSearchViewController.m in Sources */,
 				B442596E1D78211F005BC3A5 /* JXFriendsViewController.m in Sources */,
 				B44259551D780ED4005BC3A5 /* JXTabBarController.m in Sources */,
+				B4B2B7A11D7D65DB005B8959 /* JXUserSetting.m in Sources */,
 				B498AFE81D792699005A9BD8 /* JXLog.m in Sources */,
 				B44259651D781D3A005BC3A5 /* JXDiscoverViewController.m in Sources */,
 				B44259521D780AF1005BC3A5 /* JXRootViewController.m in Sources */,
+				B4B2B78D1D7D4715005B8959 /* JXFriendHeaderView.m in Sources */,
 				B442596B1D78210A005BC3A5 /* JXConversationViewController.m in Sources */,
+				B4C68D6F1D7972E7000091AD /* JXGroup.m in Sources */,
 				B44259191D77FC30005BC3A5 /* main.m in Sources */,
+				B4B2B79E1D7D65B0005B8959 /* JXUserDetail.m in Sources */,
+				B4C68D691D7971A1000091AD /* JXBaseDataModel.m in Sources */,
+				B4B2B7961D7D5208005B8959 /* JXUserGroup.m in Sources */,
+				B4B2B7901D7D4B26005B8959 /* JXTableViewCell.m in Sources */,
+				B4B2B7931D7D4B6D005B8959 /* JXFriendCell.m in Sources */,
+				B4B2B78A1D7D41F9005B8959 /* JXFriendsViewController+Delegate.m in Sources */,
 				B44259681D781FE3005BC3A5 /* JXNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,13 +1,13 @@
 //
-//  JXFirendHelper.h
+//  JXUserSetting.h
 //  JXChat
 //
-//  Created by jinxiao on 9/2/16.
+//  Created by jinxiao on 9/5/16.
 //  Copyright © 2016 NO1. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface JXFirendHelper : NSObject
+@interface JXUserSetting : NSObject
 
 @end

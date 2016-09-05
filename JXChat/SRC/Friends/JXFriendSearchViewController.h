@@ -8,6 +8,6 @@
 
 #import "JXTableViewController.h"
 
-@interface JXFriendSearchViewController : JXTableViewController
+@interface JXFriendSearchViewController : JXTableViewController<UISearchResultsUpdating>
 
 @end
