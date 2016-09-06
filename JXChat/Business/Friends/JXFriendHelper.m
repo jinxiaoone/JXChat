@@ -13,6 +13,7 @@ static JXFriendHelper *friendHelper = nil;
 @interface JXFriendHelper()
 
 
+
 @end
 
 @implementation JXFriendHelper
@@ -31,7 +32,6 @@ static JXFriendHelper *friendHelper = nil;
     self = [super init];
     if (self) {
         //初始化好友数据
-        
         
         
     }

@@ -17,14 +17,19 @@
 #import "JXMacros.h"
 #import "UIColor+JXChat.h"
 
-#import "JXFriendHelper.h"
+
+#import <CocoaLumberjack.h>
+
 
 #import "JXNavigationController.h"
 
-
+#import "JXUserHelper.h"
+#import "JXFriendHelper.h"
 
 #import "UIView+Frame.h"
+#import "NSFileManager+JXChat.h"
 
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 #endif /* PrefixHeader_pch */
 

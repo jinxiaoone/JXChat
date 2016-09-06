@@ -54,8 +54,9 @@
 
 - (void)addContect
 {
-    NSLog(@"----");
+    NSLog(@"-----");
 }
+
 
 - (JXSearchController *)searchController
 {

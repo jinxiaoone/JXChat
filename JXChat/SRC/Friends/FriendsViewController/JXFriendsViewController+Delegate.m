@@ -56,6 +56,23 @@
     return cell;
 }
 
+//拼音首字母检索
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return self.sectionHeaders;
+}
+
+// 检索时空出搜索框
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+{
+    if (index == 0) {
+        [self.tableView scrollRectToVisible:CGRectMake(0, 0, tableView.width, tableView.height) animated:NO];
+        return -1;
+    }
+    return index;
+}
+
+
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
