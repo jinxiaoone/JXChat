@@ -33,9 +33,11 @@ static JXDBManager *manager;
     return self;
 }
 
-
-
-
+- (id)init
+{
+    DDLogError(@"TLDBManager：请使用 initWithUserID: 方法初始化");
+    return nil;
+}
 
 
 @end

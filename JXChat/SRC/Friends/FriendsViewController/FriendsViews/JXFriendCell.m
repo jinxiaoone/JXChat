@@ -7,6 +7,7 @@
 //
 
 #import "JXFriendCell.h"
+#import <UIImageView+WebCache.h>
 
 #define     FRIENDS_SPACE_X         10.0f
 #define     FRIENDS_SPACE_Y         9.0f
@@ -41,13 +42,50 @@
 
 - (void)setUser:(JXUser *)user
 {
+    _user = user;
+    if (user.avatarPath) {
+        [self.avatarImageView setImage:[UIImage imageNamed:user.avatarPath]];
+    }
+    else {
+        [self.avatarImageView sd_setImageWithURL:JXURL(user.avatarURL) placeholderImage:[UIImage imageNamed:DEFAULT_AVATAR_PATH]];
+    }
     
+    [self.usernameLabel setText:user.showName];
+    [self.subTitleLabel setText:user.detailInfo.remarkInfo];
+    if (user.detailInfo.remarkInfo.length > 0 && self.subTitleLabel.isHidden) {
+        [self.subTitleLabel setHidden:NO];
+        [self.usernameLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.avatarImageView).mas_offset(-9.5);
+        }];
+    }
+    else if (user.detailInfo.remarkInfo.length == 0 && !self.subTitleLabel.isHidden){
+        [self.usernameLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.avatarImageView);
+        }];
+    }
 }
 
 
 - (void)p_addMasonry
 {
+    [self.avatarImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(FRIENDS_SPACE_X);
+        make.top.mas_equalTo(FRIENDS_SPACE_Y);
+        make.bottom.mas_equalTo(- FRIENDS_SPACE_Y + 0.5);
+        make.width.mas_equalTo(self.avatarImageView.mas_height);
+    }];
     
+    [self.usernameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.avatarImageView.mas_right).mas_offset(FRIENDS_SPACE_X);
+        make.centerY.mas_equalTo(self.avatarImageView);
+        make.right.mas_lessThanOrEqualTo(self.contentView).mas_offset(-20);
+    }];
+    
+    [self.subTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.usernameLabel);
+        make.top.mas_equalTo(self.usernameLabel.mas_bottom).mas_offset(2);
+        make.right.mas_lessThanOrEqualTo(self.contentView).mas_offset(-20);
+    }];
 }
 
 #pragma mark - Getter

@@ -17,7 +17,9 @@
 #import "JXMacros.h"
 #import "UIColor+JXChat.h"
 
+#import "JXUIUtility.h"
 
+#import <Masonry.h>
 #import <CocoaLumberjack.h>
 
 

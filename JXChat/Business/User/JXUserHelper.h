@@ -15,6 +15,6 @@
 
 @property (nonatomic, strong, readonly) NSString *userID;
 
-+ (JXUserHelper *)shareHelper;
++ (JXUserHelper *) shareHelper;
 
 @end

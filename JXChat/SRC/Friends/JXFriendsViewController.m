@@ -35,6 +35,14 @@
     self.data = self.friendHelper.data;
     self.sectionHeaders = self.friendHelper.sectionHeaders;
     [self.footerLabel setText:[NSString stringWithFormat:@"%ld位联系人",(long)self.friendHelper.friendCount]];
+    
+    __weak typeof(self) weakSelf = self;
+    [self.friendHelper setDataChangeBlock:^(NSMutableArray *data, NSMutableArray *headers, NSInteger friendCount) {
+        weakSelf.data = data;
+        weakSelf.sectionHeaders = headers;
+        [weakSelf.footerLabel setText:[NSString stringWithFormat:@"%ld位联系人", (long)friendCount]];
+        [weakSelf.tableView reloadData];
+    }];
 }
 
 - (void)p_initUI
@@ -54,6 +62,25 @@
 
 - (void)addContect
 {
+    NSURL *url = [NSURL URLWithString:@"http://ipad-bjwb.bjd.com.cn/DigitalPublication/publish/Handler/APINewsList.ashx"];
+    NSData *postData = [[NSString stringWithFormat:@"date=20151031&startRecord=1&len=5&udid=1234567890&terminalType=Iphone&cid=213"] dataUsingEncoding:NSUTF8StringEncoding];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    //设置请求方式
+    request.HTTPMethod = @"POST";
+    //设置请求参数
+    request.HTTPBody = postData;
+    
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession]dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error == nil) {
+            //6.解析服务器返回的数据
+            //说明：（此处返回的数据是JSON格式的，因此使用NSJSONSerialization进行反序列化处理）
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+            
+            NSLog(@"%@",dict);
+        }
+    }];
+    [task resume];
+    
     NSLog(@"-----");
 }
 

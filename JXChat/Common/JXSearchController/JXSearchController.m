@@ -8,27 +8,18 @@
 
 #import "JXSearchController.h"
 
-@interface JXSearchController ()
-
-@end
-
 @implementation JXSearchController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
-    
-    
+
+- (id)initWithSearchResultsController:(UIViewController *)searchResultsController
+{
+    if (self = [super init]) {
+        
+    }
+    return self;
 }
 
 
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 

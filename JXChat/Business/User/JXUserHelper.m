@@ -12,7 +12,7 @@ static JXUserHelper *helper;
 
 @implementation JXUserHelper
 
-+ (JXUserHelper *) sharedHelper
++ (JXUserHelper *)shareHelper
 {
     static dispatch_once_t once;
     dispatch_once(&once, ^{

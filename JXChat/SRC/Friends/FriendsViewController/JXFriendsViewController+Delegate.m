@@ -10,6 +10,11 @@
 #import "JXFriendHeaderView.h"
 #import "JXFriendCell.h"
 
+#import "JXNewFriendViewController.h"
+#import "JXGroupViewController.h"
+#import "JXTagsViewController.h"
+#import "JXPublicServerViewController.h"
+
 @implementation JXFriendsViewController (Delegate)
 
 - (void)registerCellClass
@@ -73,7 +78,6 @@
 }
 
 
-
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -90,7 +94,37 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"用户列表");
+    JXUser *user = [self.data[indexPath.section] objectAtIndex:indexPath.row];
+    if (indexPath.section == 0) {
+        if ([user.userID isEqualToString:@"-1"]) {
+            JXNewFriendViewController *newFriendVC = [[JXNewFriendViewController alloc] init];
+            [self setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:newFriendVC animated:YES];
+            [self setHidesBottomBarWhenPushed:NO];
+        }
+        else if ([user.userID isEqualToString:@"-2"]) {
+            JXGroupViewController *groupVC = [[JXGroupViewController alloc] init];
+            [self setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:groupVC animated:YES];
+            [self setHidesBottomBarWhenPushed:NO];
+        }
+        else if ([user.userID isEqualToString:@"-3"]) {
+            JXTagsViewController *tagsVC = [[JXTagsViewController alloc] init];
+            [self setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:tagsVC animated:YES];
+            [self setHidesBottomBarWhenPushed:NO];
+        }
+        else if ([user.userID isEqualToString:@"-4"]) {
+            JXPublicServerViewController *publicServer = [[JXPublicServerViewController alloc] init];
+            [self setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:publicServer animated:YES];
+            [self setHidesBottomBarWhenPushed:NO];
+        }
+    }
+    else {
+        
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 
