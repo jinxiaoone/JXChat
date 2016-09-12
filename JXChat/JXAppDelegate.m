@@ -9,8 +9,6 @@
 #import "JXAppDelegate.h"
 #import "JXRootViewController.h"
 
-
-
 @implementation JXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
